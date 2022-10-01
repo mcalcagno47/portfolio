@@ -1,8 +1,92 @@
-/* .hero {
-    height: 120px;
-    width: 100%;
+/* variables */
+:root {
+    /* colors */
+    --gray400: rgb(56, 56, 56);
+    --white100: white;
+    --purple250: rgb(163, 111, 163);
+
+    /* fonts */
+    --courier: 'courier new', courier, monospace, color: var(--white100);
+
+    /* spacing */
+    --spacing-unit: 24px;
+    --spacing-unit-small: 12px;
+}
+
+/* element styles */
+.header {
+    padding: 20px;
+    font-family: var(--courier);
+    background-color: var(--purple250);
+    color: --white100
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    font-family: var(--courier);
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--courier);
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.figure {
+    border: 4px dashed purple;
+    padding: var(--spacing-unit);
+    position: relative;
+    margin: var(--spacing-unit-small);
+    transition: all .1s ease-in-out;
+    max-width: 1280px;
+}
+
+.figure:hover {
+    box-shadow: inset 0px 0px 25px white, 0px 0px 50px white;
+}
+
+
+
+
+
+
+
+
+
+
+.hero {
+    max-width: 1280px;
     margin-bottom: 25px;
     background-image: url("https://i.pinimg.com/originals/74/ff/93/74ff93cb78f4f7ae7275602bae99da58.jpg");
     background-size: cover;
     background-position: center;
-} */
+}
+
+/* atomic classes */
+.ta-c {
+    text-align: center;
+}
+
+/* media queries */
+/*medium > 768 px */
+@media screen and (min-width: 768px) {}
