@@ -1,13 +1,13 @@
 /* variables */
 :root {
     /* colors */
-    --gray400: rgb(170, 170, 170);
+    --gray400: rgb(67, 146, 199);
     --white100: white;
-    --purple250: rgb(163, 111, 163);
-    --yellow: yellow;
+    --purple250: rgba(0, 0, 0, 0.63);
+    --yellow: rgb(241, 194, 36);
 
     /* fonts */
-    --Sans-serif: arial, verdana, helvetica, color: var(--white100);
+    --monospace: 'courier new', 'lucida console', 'monaco', color: var(--white100);
 
     /* spacing */
     --spacing-unit: 24px;
@@ -16,20 +16,18 @@
 
 html {
     background-color: var(--gray400);
-    font-family: var(--Sans-serif);
 }
 
 /* element styles */
 .header {
     padding: 10px;
-    font-family: var(--Sans-serif);
     background-color: var(--purple250);
+    font: var(--monospace);
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
-    font-family: var(--Sans-serif);
     color: var(--white100);
 }
 
@@ -37,7 +35,6 @@ html {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: var(--Sans-serif);
     font-size: 20px;
 }
 
@@ -67,15 +64,19 @@ a:hover {
     max-width: 1280px;
     margin: 0 auto;
     border: 10px solid white;
+    style: font-family: var(--monospace);
 }
 
-.my-sections h2 {}
+.my-sections h2 {
+    font: 1.2em "sans-serif", sans-serif;
+}
 
-.my-sections h2 p {}
+.my-sections h2 p {
+    font: 1.2em "sans-serif", sans-serif;
+}
 
 .work-images {
-    border: 4px solid purple;
-    padding: var(--spacing-unit);
+    border: 4px solid var(--yellow);
     position: relative;
     margin: var(--spacing-unit-small);
     transition: all .1s ease-in-out;
@@ -84,7 +85,7 @@ a:hover {
 }
 
 .work-images:hover {
-    box-shadow: inset 0px 0px 15px var(--gray400), 0px 0px 20px var(--yellow);
+    box-shadow: inset 0px 0px 15px, 0px 0px 20px var(--white100);
     border-radius: 5%;
 }
 
