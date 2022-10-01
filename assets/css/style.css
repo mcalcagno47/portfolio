@@ -1,37 +1,43 @@
 /* variables */
 :root {
     /* colors */
-    --gray400: rgb(56, 56, 56);
+    --gray400: rgb(170, 170, 170);
     --white100: white;
     --purple250: rgb(163, 111, 163);
+    --yellow: yellow;
 
     /* fonts */
-    --courier: 'courier new', courier, monospace, color: var(--white100);
+    --Sans-serif: arial, verdana, helvetica, color: var(--white100);
 
     /* spacing */
     --spacing-unit: 24px;
     --spacing-unit-small: 12px;
 }
 
+html {
+    background-color: var(--gray400);
+    font-family: var(--Sans-serif);
+}
+
 /* element styles */
 .header {
-    padding: 20px;
-    font-family: var(--courier);
+    padding: 10px;
+    font-family: var(--Sans-serif);
     background-color: var(--purple250);
-    color: --white100
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
-    font-family: var(--courier);
+    font-family: var(--Sans-serif);
+    color: var(--white100);
 }
 
 .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: var(--courier);
+    font-family: var(--Sans-serif);
     font-size: 20px;
 }
 
@@ -44,25 +50,42 @@
     margin-left: 25px;
 }
 
+a {
+    color: var(--white100);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a:hover {
+    color: var(--yellow);
+}
+
 .main {
     display: flex;
     flex-direction: column;
     height: 100vh;
     max-width: 1280px;
     margin: 0 auto;
+    border: 10px solid white;
 }
 
-.figure {
-    border: 4px dashed purple;
+.my-sections h2 {}
+
+.my-sections h2 p {}
+
+.work-images {
+    border: 4px solid purple;
     padding: var(--spacing-unit);
     position: relative;
     margin: var(--spacing-unit-small);
     transition: all .1s ease-in-out;
-    max-width: 1280px;
+    max-width: 200px;
+    border-radius: 35%;
 }
 
-.figure:hover {
-    box-shadow: inset 0px 0px 25px white, 0px 0px 50px white;
+.work-images:hover {
+    box-shadow: inset 0px 0px 15px var(--gray400), 0px 0px 20px var(--yellow);
+    border-radius: 5%;
 }
 
 
@@ -83,8 +106,8 @@
 }
 
 /* atomic classes */
-.ta-c {
-    text-align: center;
+.ta-l {
+    text-align: left;
 }
 
 /* media queries */
