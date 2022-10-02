@@ -22,23 +22,31 @@ html {
 }
 
 /* element styles */
-.header {
-    padding: 10px;
+header {
+    padding: 40px;
     background-color: var(--purple250);
     font: var(--monospace);
+    color: var(--white100);
+    text-align: center;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 72pt;
     color: var(--white100);
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-size: 20px;
+nav {
+    display: flex;
+    background-color: var(--yellow);
+}
+
+nav a {
+    color: var(--purple250);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20pt;
 }
 
 .header div ul {
@@ -50,7 +58,7 @@ html {
     margin-left: 25px;
 }
 
-a {
+/* a {
     color: var(--white100);
     text-decoration: none;
     font-size: 30px;
@@ -64,9 +72,9 @@ a {
 
 a:hover {
     color: var(--yellow);
-}
+} */
 
-/* .main {
+.main {
     display: flex;
     flex-direction: column;
     max-width: 1000px;
@@ -79,6 +87,7 @@ a:hover {
     transform: translate(7px, -576px);
 }
 
+/*
 h2 {
     font: 1.2em "sans-serif", sans-serif;
     font-size: 72pt;
@@ -91,17 +100,16 @@ h2 {
     margin: 22pt;
     padding: 5pt;
 }
+*/
 
-.profile-pic {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 202px;
-    border-radius: 41px;
-    transform: translate(1396px, -249px);
-    position: relative;
+img {
+    border-style: none;
+    border-radius: 5%;
+    max-width: 50%;
+    margin: 20pt;
 }
 
-.figure {
+/* .figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -130,7 +138,7 @@ h2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-} */
+}
 
 .work-images:hover {
     box-shadow: inset 0px 0px 15px, 0px 0px 20px var(--white100);
@@ -140,7 +148,7 @@ h2 {
 .work-images-recent:hover {
     box-shadow: inset 0px 0px 15px, 0px 0px 20px var(--white100);
     border-radius: 5%;
-}
+}  */
 
 .hero {
     max-width: 1280px;
@@ -149,15 +157,6 @@ h2 {
     background-size: cover;
     background-position: center;
 }
-
-/* atomic classes */
-.ta-l {
-    text-align: left;
-}
-
-/* media queries */
-/*medium > 768 px */
-@media screen and (min-width: 768px) {}
 
 .footer {
     padding: 30px;
@@ -169,4 +168,19 @@ h2 {
 
 .footer h2 {
     font-size: 20px;
+}
+
+/* atomic classes */
+.ta-l {
+    text-align: left;
+}
+
+/* media queries */
+/*medium > 768 px */
+@media screen and (max-width: 768px) {
+
+    main,
+    nav {
+        flex-direction: column;
+    }
 }
