@@ -16,6 +16,9 @@
 
 html {
     background-color: var(--gray400);
+    font-family: var(--monospace);
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* element styles */
@@ -51,7 +54,11 @@ a {
     color: var(--white100);
     text-decoration: none;
     font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: fit-content;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -59,29 +66,39 @@ a:hover {
     color: var(--yellow);
 }
 
-.main {
+/* .main {
     display: flex;
     flex-direction: column;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-left: 314px;
     border: 4px solid var(--yellow);
     border-radius: 5pt;
     padding: 15px;
     color: var(--white100);
     font-size: 15pt;
+    transform: translate(7px, -576px);
 }
 
 h2 {
     font: 1.2em "sans-serif", sans-serif;
-    font-size: 36pt;
+    font-size: 72pt;
     position: relative;
-    width: 156pt;
+    width: 196pt;
+    height: 161pt;
     background-color: var(--purple250);
     color: var(--white100);
     border-radius: 5pt;
     margin: 22pt;
     padding: 5pt;
-    justify-content: center;
+}
+
+.profile-pic {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 202px;
+    border-radius: 41px;
+    transform: translate(1396px, -249px);
+    position: relative;
 }
 
 .figure {
@@ -95,11 +112,12 @@ h2 {
     position: relative;
     margin: var(--spacing-unit-small);
     transition: all .1s ease-in-out;
-    max-width: 400px;
+    max-width: 323px;
     border-radius: 35%;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .work-images {
@@ -108,12 +126,11 @@ h2 {
     margin: var(--spacing-unit-small);
     transition: all .1s ease-in-out;
     max-width: 323px;
-    max-height: 162px;
     border-radius: 35%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-}
+} */
 
 .work-images:hover {
     box-shadow: inset 0px 0px 15px, 0px 0px 20px var(--white100);
@@ -124,13 +141,6 @@ h2 {
     box-shadow: inset 0px 0px 15px, 0px 0px 20px var(--white100);
     border-radius: 5%;
 }
-
-
-
-
-
-
-
 
 .hero {
     max-width: 1280px;
