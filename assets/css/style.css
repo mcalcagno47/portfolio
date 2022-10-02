@@ -64,7 +64,6 @@ a:hover {
     max-width: 1280px;
     margin: 0 auto;
     border: 10px solid white;
-    style: font-family: var(--monospace);
 }
 
 .my-sections h2 {
