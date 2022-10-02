@@ -32,8 +32,9 @@ header {
 
 header h1 {
     display: inline-block;
-    font-size: 72pt;
+    font-size: 60pt;
     color: var(--white100);
+    text-align: center;
 }
 
 nav {
@@ -76,37 +77,52 @@ a:hover {
 
 .main {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    max-width: 1000px;
-    margin-left: 314px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: 4px solid var(--yellow);
     border-radius: 5pt;
     padding: 15px;
     color: var(--white100);
     font-size: 15pt;
-    transform: translate(7px, -576px);
+    background-color: var(--purple250);
 }
 
-/*
+aside {
+    flex: 1;
+    padding: 20px;
+    width: 25%;
+}
+
+section {
+    flex: 3;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 100%;
+    padding-left: 20px;
+}
+
+
 h2 {
-    font: 1.2em "sans-serif", sans-serif;
-    font-size: 72pt;
+    font-size: 30pt;
     position: relative;
-    width: 196pt;
-    height: 161pt;
+    width: 158pt;
     background-color: var(--purple250);
     color: var(--white100);
     border-radius: 5pt;
-    margin: 22pt;
-    padding: 5pt;
+    margin-left: 30pt;
+    padding: 13pt;
 }
-*/
+
 
 img {
     border-style: none;
     border-radius: 5%;
     max-width: 50%;
-    margin: 20pt;
+    margin-left: 20pt;
 }
 
 /* .figure {
@@ -126,7 +142,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .work-images {
     border: 4px solid var(--yellow);
@@ -148,9 +164,9 @@ img {
 .work-images-recent:hover {
     box-shadow: inset 0px 0px 15px, 0px 0px 20px var(--white100);
     border-radius: 5%;
-}  */
+}
 
-.hero {
+*/ .hero {
     max-width: 1280px;
     margin-bottom: 25px;
     background-image: url("https://i.pinimg.com/originals/74/ff/93/74ff93cb78f4f7ae7275602bae99da58.jpg");
@@ -182,5 +198,9 @@ img {
     main,
     nav {
         flex-direction: column;
+    }
+
+    aside {
+        order: 2;
     }
 }
