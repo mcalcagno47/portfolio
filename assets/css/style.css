@@ -107,8 +107,8 @@ h2 {
     position: relative;
     margin: var(--spacing-unit-small);
     transition: all .1s ease-in-out;
-    max-width: 200px;
-    max-height: 90px;
+    max-width: 323px;
+    max-height: 162px;
     border-radius: 35%;
     display: flex;
     flex-wrap: wrap;
