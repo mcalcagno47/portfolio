@@ -38,6 +38,7 @@ header h1 {
 nav {
     display: flex;
     background-color: var(--yellow);
+    flex-direction: row-reverse;
 }
 
 nav a {
@@ -179,14 +180,13 @@ img {
 }
 
 .footer {
-    padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     color: var(--white100);
     background-color: var(--purple250);
     position: absolute;
-    width: 100%;
+    width: 99.9999999%;
 }
 
 .footer h2 {
