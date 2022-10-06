@@ -185,6 +185,8 @@ img {
     text-align: center;
     color: var(--white100);
     background-color: var(--purple250);
+    position: absolute;
+    width: 100%;
 }
 
 .footer h2 {
