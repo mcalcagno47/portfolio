@@ -14,6 +14,11 @@
     --spacing-unit-small: 12px;
 }
 
+main {
+    display: flex;
+    height: fit-content;
+}
+
 html {
     background-color: var(--gray400);
     font-family: var(--monospace);
@@ -48,6 +53,12 @@ nav a {
     text-decoration: none;
     text-align: center;
     font-size: 20pt;
+    font-family: sans-serif;
+}
+
+nav a:hover {
+    color: var(--white100);
+    font-style: italic;
 }
 
 .header div ul {
@@ -59,26 +70,7 @@ nav a {
     margin-left: 25px;
 }
 
-/* a {
-    color: var(--white100);
-    text-decoration: none;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: fit-content;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-a:hover {
-    color: var(--yellow);
-} */
-
 .main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     margin-left: 100px;
     margin-right: 100px;
     border: 4px solid var(--yellow);
@@ -87,33 +79,39 @@ a:hover {
     color: var(--white100);
     font-size: 15pt;
     background-color: var(--purple250);
+    min-width: 200px;
 }
 
 aside {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    position: absolute;
-    left: 0;
     width: 25%;
-    height: 100%;
     background-color: var(--purple250);
+    flex-wrap: wrap;
 }
 
 aside h2 {
-    font-size: 30pt;
+    font-size: 36pt;
     color: var(--white100);
     text-align: center;
-    line-height: 60px;
     background: var(--gray400);
+    width: fit-content;
 }
 
 aside ul li {
     color: var(--white100);
     display: block;
-    height: 100%;
+    height: 50%;
     width: 100%;
     line-height: 20px;
+    font-family: sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 section {
@@ -133,7 +131,6 @@ h2 {
     background-color: var(--purple250);
     color: var(--white100);
     border-radius: 5pt;
-    margin-left: 30pt;
     padding: 13pt;
 }
 
@@ -145,7 +142,7 @@ img {
     margin-left: 20pt;
 }
 
-/* .figure {
+.figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -155,14 +152,14 @@ img {
     border: 4px solid var(--yellow);
     position: relative;
     margin: var(--spacing-unit-small);
+    min-width: 300px;
     transition: all .1s ease-in-out;
-    max-width: 323px;
     border-radius: 35%;
     flex-wrap: wrap;
     display: block;
     margin-left: auto;
     margin-right: auto;
-} */
+}
 
 .work-images {
     border: 4px solid var(--yellow);
@@ -214,7 +211,7 @@ img {
 
 /* media queries */
 /*medium > 768 px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
 
     main,
     nav {
@@ -223,11 +220,11 @@ img {
 
     aside {
         order: 2;
+        width: 100%;
     }
 
     section {
         order: 1;
     }
 
-    ;
 }
