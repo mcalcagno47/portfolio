@@ -149,7 +149,7 @@ img {
     margin: var(--spacing-unit-small);
     min-width: 300px;
     transition: all .1s ease-in-out;
-    border-radius: 35%;
+    border-radius: 35pt;
     flex-wrap: wrap;
     display: block;
     margin-left: auto;
@@ -162,7 +162,7 @@ img {
     margin: var(--spacing-unit-small);
     transition: all .1s ease-in-out;
     max-width: 323px;
-    border-radius: 35%;
+    border-radius: 35pt;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -171,12 +171,12 @@ img {
 
 .work-images:hover {
     box-shadow: inset 0px 0px 15px, 0px 0px 20px var(--white100);
-    border-radius: 5%;
+    border-radius: 5pt;
 }
 
 .work-images-recent:hover {
     box-shadow: inset 0px 0px 15px, 0px 0px 20px var(--white100);
-    border-radius: 5%;
+    border-radius: 5pt;
 }
 
 .footer {
